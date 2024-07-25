@@ -1,10 +1,6 @@
 <template>
   <div>
-    <h1>{{ message }}</h1>
-    <div>
-      <h2>File Management System</h2>
-      <pre>{{ externalData }}</pre>
-    </div>
+    <h1>Hello, World!</h1>
   </div>
 </template>
 
@@ -12,32 +8,13 @@
 export default {
   data() {
     return {
-      message: '',
-      externalData: ''
+      // No data properties needed for "Hello, World!"
     };
   },
-  async created() {
-    try {
-      const response = await fetch('http://localhost:3000/');
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      const data = await response.json();
-      this.message = data;
-    } catch (error) {
-      console.error('Fetch error:', error);
-    }
-
-    try {
-      const response = await fetch('http://localhost:3000/external');
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      const data = await response.json();
-      this.externalData = data;
-    } catch (error) {
-      console.error('Fetch error:', error);
-    }
-  }
+  // No lifecycle hooks needed for this example
 };
 </script>
+
+<style scoped>
+/* Add any styles if needed */
+</style>
