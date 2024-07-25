@@ -1,0 +1,70 @@
+GET http://localhost:3000/
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/showSiteName
+Content-Type: application/json
+
+###
+
+POST http://localhost:3000/findbyID
+Content-Type: application/json
+
+{
+    "id": "9281"
+}
+
+
+###
+
+POST http://localhost:3000/updateData
+Content-Type: application/json
+
+{
+    "id":"9281",
+    "column":"siteName",
+    "value":"Taman Rambai Jaya"
+}
+
+
+
+
+###
+
+POST http://localhost:3000/addData
+Content-Type: application/json
+
+{
+    "id": 123,
+    "status": "active",
+    "siteId": "A456",
+    "siteName": "Main Street Tower",
+    "address": "123 Main Street, Cityville",
+    "zone": "Zone 1",
+    "subdistrict": "Central",
+    "district": "City Center",
+    "state": "Stateville",
+    "postCode": "12345",
+    "country": "Countryland",
+    "latitude": 37.7749,
+    "longitude": -122.4194,
+    "structureType": "Tower",
+    "structureHeight": 150.5,
+    "handover": "2023-06-01",
+    "active": true,
+    "dismantled": false,
+    "landExpiry": "2023-06-01",
+    "expiryDays": 730,
+    "assets": "Equipment A, Equipment B",
+    "sharers": "Company X, Company Y",
+    "excludeSharers": "Company Z",
+    "utilSharers": "Company A, Company B",
+    "cabins": "Cabin 1, Cabin 2",
+    "outdoors": "Yes"
+}
+
+
+
+
+
